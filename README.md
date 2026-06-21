@@ -97,7 +97,9 @@ make smoke     # live smoke test, auto-skipped when GRPC_ENDPOINT is unset
 
 ## Pairs with
 
-`solana-execution-skill` — this skill **detects and decodes**; pair it to **act** on the events.
+An **execution skill** (arb / trade / liquidation bot) — this skill **detects and decodes**; pair it
+with one to **act** on the events. The [`agent-emit`](skill/agent-emit.md) adapter is the clean
+hand-off boundary (normalized `solana-stream/v1` events in, your action out).
 
 ## Repo layout
 

@@ -141,8 +141,8 @@ Checkpoint and **pause after each**; ask before assuming.
 - Offline fixture decode tests must run in CI with **no API key**; gate live devnet/mainnet smoke
   tests behind an env check so CI passes without secrets.
 - README states: what it does, the exact problem, install path (both scripts), default-stack table,
-  usage examples, the verified-reference highlight, and a one-line "pairs with
-  solana-execution-skill" note.
+  usage examples, the verified-reference highlight, and a one-line "pairs with an execution skill"
+  note.
 
 ## Definition of Done
 - [ ] Shape matches `solana-game-skill`.

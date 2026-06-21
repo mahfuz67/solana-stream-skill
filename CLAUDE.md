@@ -62,5 +62,6 @@ security review — route to the core skill. Don't duplicate them here.
 
 ## Pairs with
 
-`solana-execution-skill` — this skill **detects and decodes**; pair it to **act** on the events. The
-[agent-emit](skill/agent-emit.md) adapter is the hand-off boundary.
+An **execution skill** (arb / trade / liquidation bot) — this skill **detects and decodes**; pair it
+with one to **act** on the events. The [agent-emit](skill/agent-emit.md) adapter is the hand-off
+boundary.

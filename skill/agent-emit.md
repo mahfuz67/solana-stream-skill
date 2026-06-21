@@ -4,7 +4,7 @@ Detection and decoding are only useful if something downstream can react. This i
 agentic layer: every decoded pool/migration event is normalized to **one stable JSON schema** and
 delivered over **stdout/JSONL, webhook, or an in-process callback**. An autonomous agent loop
 consumes the same shape regardless of which DEX or launchpad produced it. Pair with an execution
-skill to *act* (`pairs with solana-execution-skill`).
+skill to *act* (pairs with any execution skill — arb / trade / liquidation bot).
 
 ## Normalized schema (`solana-stream/v1`)
 

@@ -108,6 +108,6 @@ Do **not** duplicate these — route to [solana-dev-skill](https://github.com/so
 
 ## Pairs with
 
-`solana-execution-skill` — this skill **detects and decodes**; pair it with an execution skill to
-**act** on the events (swap, snipe, liquidate). The [agent-emit.md](agent-emit.md) adapter is the
-clean hand-off boundary.
+This skill **detects and decodes**; pair it with an **execution skill** (arb / trade / liquidation
+bot) to **act** on the events (swap, snipe, liquidate). The [agent-emit.md](agent-emit.md) adapter is
+the clean hand-off boundary.
