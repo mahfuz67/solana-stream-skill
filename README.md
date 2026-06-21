@@ -1,6 +1,6 @@
 # solana-stream-skill
 
-A Claude Code **skill** that teaches a coding agent to detect and **decode** Solana on-chain events
+A **skill** that teaches a coding agent to detect and **decode** Solana on-chain events
 in real time — new liquidity pools across every major DEX and launchpad token migrations — the
 moment they happen, and emit them as structured events an autonomous agent can react to.
 
