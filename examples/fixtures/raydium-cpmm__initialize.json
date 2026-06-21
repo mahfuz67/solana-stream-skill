@@ -1,0 +1,38 @@
+{
+  "name": "raydium-cpmm initialize (anchor pool create with LP mint)",
+  "venue": "raydium-cpmm",
+  "program": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+  "instruction": "initialize",
+  "signature": "Gq5ThTLF2pmYkvcNh3P5aa9jZNhPsYMqN9Jy9vVRGSyK",
+  "slot": 301234700,
+  "blockTime": 1718900100,
+  "ixDataHex": "afaf6d1f0d989bed0065cd1d000000008017b42c000000002055746600000000",
+  "accounts": [
+    "2xGzSVvEEVN7nbwJmJ7qsGVKuubDyB66A7SHyGY8c56y",
+    "8LqMaqM47r9JdEUjiTHBL5sAoR9RpVkvJkN2NL63AnHN",
+    "7KrEbogaqD172qE27bFMQJmZ7CFG1GVjMhmjQrvhSRAd",
+    "AqsUMPc9igTK7DzWN4d9dbPn9VEpxLVc3FcKYxswak8T",
+    "78qcNf94C4YtVK9S2v6NHsLj5xPNxHxPnyBad5zCLnCE",
+    "So11111111111111111111111111111111111111112",
+    "9rDZYQJtNZohHTgqsxCPWo6DM3iwBC7HAp6Mt93WHEch",
+    "EbtPJppd3mXC87L2VyUqNjVDzKijakAYoug4iBXGc2Np",
+    "34gkMrBxW6jqPrRSrDeTWLN3yDpShB1nF2h2Hz96oG8o",
+    "BFMxBu7BPy8wAJJM1s4BxTGK7ahQLczjQCsgomYGyh5z",
+    "F3JMbhpf2HeqcWyqmurHocVgfAtVr6gRRaEEy6z5cEk3",
+    "4M8xjCuk32zk4mjYgvLgmt8m2o9HKWwKyCh2zgzK3YXV"
+  ],
+  "expected": {
+    "type": "pool_created",
+    "venue": "raydium-cpmm",
+    "pool": "AqsUMPc9igTK7DzWN4d9dbPn9VEpxLVc3FcKYxswak8T",
+    "mintA": "78qcNf94C4YtVK9S2v6NHsLj5xPNxHxPnyBad5zCLnCE",
+    "mintB": "So11111111111111111111111111111111111111112",
+    "lpMint": "9rDZYQJtNZohHTgqsxCPWo6DM3iwBC7HAp6Mt93WHEch",
+    "vaultA": "F3JMbhpf2HeqcWyqmurHocVgfAtVr6gRRaEEy6z5cEk3",
+    "vaultB": "4M8xjCuk32zk4mjYgvLgmt8m2o9HKWwKyCh2zgzK3YXV",
+    "amounts": {
+      "initA": "500000000",
+      "initB": "750000000"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "solana-stream-ts-yellowstone",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cross-DEX pool + migration watcher (Yellowstone gRPC) with offline decode tests",
+  "scripts": {
+    "test": "node --import tsx --test test/decode.test.ts",
+    "watch": "node --import tsx src/watch.ts",
+    "validate": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@triton-one/yellowstone-grpc": "^5.0.0",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}

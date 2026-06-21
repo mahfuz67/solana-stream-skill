@@ -1,0 +1,47 @@
+{
+  "name": "raydium-amm-v4 initialize2 (native pool create)",
+  "venue": "raydium-amm-v4",
+  "program": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+  "instruction": "initialize2",
+  "signature": "BL32ujgx7LadVgEeyEWvi3gh5RkVbBTLxC6k3mb6yubH",
+  "slot": 301234567,
+  "blockTime": 1718900000,
+  "ixDataHex": "01ff205574660000000000ca9a3b000000000094357700000000",
+  "accounts": [
+    "2xGzSVvEEVN7nbwJmJ7qsGVKuubDyB66A7SHyGY8c56y",
+    "8LqMaqM47r9JdEUjiTHBL5sAoR9RpVkvJkN2NL63AnHN",
+    "7KrEbogaqD172qE27bFMQJmZ7CFG1GVjMhmjQrvhSRAd",
+    "4qeNrGtUxsgsy9xecMrZS2e12VrRPfGUB8hyNtx9y4Vk",
+    "Bk9cBfMvjNqifWscUxotoU2hkZJxkS1ba1YPPvCCs8Re",
+    "hWZVXDukLKoLCgRfJwoBbWtcaRCrXyzTAgS8LE24oTC",
+    "3kWkk1rmkkqGJaDFXfu586F4SBibdJit5JEbiMV6D14r",
+    "4apDJacmLDh8wzHXXDRevcp7XtLQNZx9w8ELzLoaiSsX",
+    "bGtYfZxiw21cNtFsSGW1LxW8XuneeWK2Dz2uY8HLrcf",
+    "So11111111111111111111111111111111111111112",
+    "9T4CJxjcLAmSX22dNkWsWFbt1yLS1mGfp5JBGtcYZCgE",
+    "FNiEetMVWaa6vfm6DGUWkEoZfFca8jwRZ4rw1P2ttb3F",
+    "7mPAiJdkahqk2SvnN6MnCW2zwqqJtpnWdiRq1d91XjGS",
+    "6K1LNkeNQCBKcThTCjumKuFHRbMmGW5W56yW5ffiFffA",
+    "8AjzbJKNCDGbXZT2Fh3DbLXWYP6gZxs4AEcoJR93FT4q",
+    "3pRjcBnmj9bxi9xJzSsKzVPfHZ8JGD29L3eTqNAnMWYR",
+    "H7FECjhbB3m1vEmt6K5rDEJuEJxuVukyYNjE1EpopHJx",
+    "F9NpMsUEbmqrLQRFot47nKb7AUshfhhVQ5pWsikXZ22Z",
+    "DEkiL94T8g3pepQqxitQf66YDPixkfbE9bLnxsJC81U",
+    "57XxMRX1w5cxFfADznQUaKz1dcTsKMfrLgGFEvNgiKvu",
+    "CFajHYhC22cYFoHvf23HeEEoYzPQFQ9FLKSQu8bkkf1j"
+  ],
+  "expected": {
+    "type": "pool_created",
+    "venue": "raydium-amm-v4",
+    "pool": "Bk9cBfMvjNqifWscUxotoU2hkZJxkS1ba1YPPvCCs8Re",
+    "mintA": "bGtYfZxiw21cNtFsSGW1LxW8XuneeWK2Dz2uY8HLrcf",
+    "mintB": "So11111111111111111111111111111111111111112",
+    "lpMint": "4apDJacmLDh8wzHXXDRevcp7XtLQNZx9w8ELzLoaiSsX",
+    "vaultA": "9T4CJxjcLAmSX22dNkWsWFbt1yLS1mGfp5JBGtcYZCgE",
+    "vaultB": "FNiEetMVWaa6vfm6DGUWkEoZfFca8jwRZ4rw1P2ttb3F",
+    "amounts": {
+      "initA": "1000000000",
+      "initB": "2000000000"
+    }
+  }
+}

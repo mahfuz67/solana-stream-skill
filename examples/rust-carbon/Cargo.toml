@@ -1,0 +1,30 @@
+[package]
+name = "solana-stream-rust-carbon"
+version = "0.1.0"
+edition = "2021"
+description = "Cross-DEX pool + migration watcher (Carbon) with offline decode tests"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hex = "0.4"
+
+# The live Carbon watcher (src/bin/watch.rs) is gated behind `--features live`.
+# Enable it and add the Carbon deps below to run against a real stream:
+#   carbon-core = "1.0"
+#   carbon-yellowstone-grpc-datasource = "1.0"
+#   carbon-raydium-amm-v4-decoder = "1.0"
+#   carbon-orca-whirlpool-decoder = "1.0"
+#   carbon-pumpfun-decoder = "1.0"
+#   tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+[features]
+default = []
+live = []
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "watch"
+path = "src/bin/watch.rs"
+required-features = ["live"]

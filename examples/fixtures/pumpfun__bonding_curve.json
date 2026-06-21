@@ -1,0 +1,16 @@
+{
+  "name": "pumpfun BondingCurve account complete=true (migration pending)",
+  "venue": "pumpfun",
+  "program": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+  "kind": "account",
+  "account": "9GETuyqZgLks6acPfBFtJSd4bnPg41mjPpYffcK5h6KQ",
+  "signature": "GsNud7EvmRRUWQsf9NDuFoDBP8UZ5WissCfjcgo5BapF",
+  "slot": 301234999,
+  "blockTime": 1718900480,
+  "accountDataHex": "17b7f83760d8ac600000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111100002222222222222222222222222222222222222222222222222222222222222222",
+  "expected": {
+    "type": "migration_pending",
+    "venue": "pumpfun",
+    "instruction": "BondingCurve"
+  }
+}

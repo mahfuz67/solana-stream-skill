@@ -1,0 +1,31 @@
+{
+  "name": "orca-whirlpool initialize_pool (anchor pool create)",
+  "venue": "orca-whirlpool",
+  "program": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+  "instruction": "initialize_pool",
+  "signature": "Eq37TWN2nmjAB28dNNm3ueu9UKwe8PnHSq2RFiGMmqio",
+  "slot": 301234600,
+  "blockTime": 1718900050,
+  "ixDataHex": "5fb40aac54aee828fe400000000000000000000000000000000000",
+  "accounts": [
+    "2xGzSVvEEVN7nbwJmJ7qsGVKuubDyB66A7SHyGY8c56y",
+    "AXwsbbeKHyjUeW7nX8wZKLcXx4MHjH2DG5MhEiGz73yc",
+    "So11111111111111111111111111111111111111112",
+    "4qeNrGtUxsgsy9xecMrZS2e12VrRPfGUB8hyNtx9y4Vk",
+    "D5WhC6g8KSKXyhE2gUAJXw8eR5YWbSBrGag3zstBbXdh",
+    "D397x3EcSe35L1csLeWJUt1sMR7cdeaj7A7rzb2tFCAa",
+    "GvE1u6E4q1szv33Cu7WUMisAWjhVz1h3M82dj3bnUc1m",
+    "EbtPJppd3mXC87L2VyUqNjVDzKijakAYoug4iBXGc2Np"
+  ],
+  "expected": {
+    "type": "pool_created",
+    "venue": "orca-whirlpool",
+    "pool": "D5WhC6g8KSKXyhE2gUAJXw8eR5YWbSBrGag3zstBbXdh",
+    "mintA": "AXwsbbeKHyjUeW7nX8wZKLcXx4MHjH2DG5MhEiGz73yc",
+    "mintB": "So11111111111111111111111111111111111111112",
+    "lpMint": null,
+    "vaultA": "D397x3EcSe35L1csLeWJUt1sMR7cdeaj7A7rzb2tFCAa",
+    "vaultB": "GvE1u6E4q1szv33Cu7WUMisAWjhVz1h3M82dj3bnUc1m",
+    "amounts": {}
+  }
+}
