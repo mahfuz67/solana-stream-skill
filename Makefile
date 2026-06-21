@@ -24,8 +24,7 @@ test-rust:
 
 validate:
 	cd $(TS) && npx tsc --noEmit
-	cd $(RS) && cargo test --no-run
-	@echo "fixtures:" && ls examples/fixtures/*.json | wc -l
+	bash scripts/validate.sh
 
 watch:
 	cd $(TS) && npm run watch
