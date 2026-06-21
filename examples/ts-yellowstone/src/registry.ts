@@ -35,7 +35,9 @@ export const INSTRUCTION_REGISTRY: Record<string, InstructionSpec[]> = {
       type: "pool_created",
       native: { tag: 1 },
       accounts: { pool: 4, lpMint: 7, mintA: 8, mintB: 9, vaultA: 10, vaultB: 11 },
-      amounts: { initA: { offset: 10 }, initB: { offset: 18 } },
+      // data: tag(1) nonce(1) open_time@2 init_pc_amount@10 init_coin_amount@18.
+      // initA tracks mintA (coin) -> offset 18; initB tracks mintB (pc) -> offset 10.
+      amounts: { initA: { offset: 18 }, initB: { offset: 10 } },
     },
   ],
   "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc": [

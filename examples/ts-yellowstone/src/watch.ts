@@ -54,6 +54,8 @@ async function main(sink: EventSink = jsonlSink) {
     const ctx: DecodeContext = { signature: sig, slot, blockTime: null, commitment: "confirmed" };
 
     const msg = tx.transaction?.message;
+    // Static keys only; v0 address-lookup-table accounts (tx.meta.loaded*Addresses) are not
+    // resolved here. Append them if you need ALT-referenced accounts.
     const keys: string[] = (msg?.accountKeys ?? []).map((k: Uint8Array) => bs58.encode(k));
 
     for (const ix of msg?.instructions ?? []) {

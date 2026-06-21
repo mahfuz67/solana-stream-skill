@@ -12,7 +12,9 @@ CORE_SKILL_PATH="$SKILLS_DIR/solana-dev"
 CLAUDE_MD_PATH="$HOME/.claude/CLAUDE.md"
 
 SKIP_CONFIRM=false
-[ "$1" = "-y" ] || [ "$1" = "--yes" ] && SKIP_CONFIRM=true
+case "${1:-}" in
+    -y|--yes) SKIP_CONFIRM=true ;;
+esac
 
 echo ""
 echo -e "${CYAN}solana-stream-skill${NC} — real-time on-chain event detection & decoding"

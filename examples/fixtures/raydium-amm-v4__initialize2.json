@@ -40,8 +40,8 @@
     "vaultA": "9T4CJxjcLAmSX22dNkWsWFbt1yLS1mGfp5JBGtcYZCgE",
     "vaultB": "FNiEetMVWaa6vfm6DGUWkEoZfFca8jwRZ4rw1P2ttb3F",
     "amounts": {
-      "initA": "1000000000",
-      "initB": "2000000000"
+      "initA": "2000000000",
+      "initB": "1000000000"
     }
   }
 }

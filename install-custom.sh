@@ -10,9 +10,9 @@ PERSONAL="$HOME/.claude/skills"
 PROJECT=".claude/skills"
 INSTALL_BASE=""
 
-case "$1" in
+case "${1:-}" in
     --project) INSTALL_BASE="$PROJECT" ;;
-    --path) INSTALL_BASE="$2" ;;
+    --path) INSTALL_BASE="${2:-}" ;;
     --personal) INSTALL_BASE="$PERSONAL" ;;
 esac
 

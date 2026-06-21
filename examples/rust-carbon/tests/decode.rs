@@ -5,7 +5,9 @@ use std::fs;
 use std::path::PathBuf;
 
 fn fixtures_dir() -> PathBuf {
-    PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("..").join("fixtures")
+    PathBuf::from(env!("CARGO_MANIFEST_DIR"))
+        .join("..")
+        .join("fixtures")
 }
 
 fn ctx(f: &Value) -> DecodeContext {
@@ -54,7 +56,10 @@ fn fixtures_decode_to_expected_events() {
         }
         checked += 1;
     }
-    assert!(checked >= 5, "expected at least 5 fixtures, checked {checked}");
+    assert!(
+        checked >= 5,
+        "expected at least 5 fixtures, checked {checked}"
+    );
 }
 
 #[test]

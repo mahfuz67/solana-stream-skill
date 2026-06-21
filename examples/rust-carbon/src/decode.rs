@@ -54,19 +54,25 @@ pub fn decode_instruction(
         commitment: ctx.commitment.clone(),
         pool: at(accounts, spec.accounts.pool),
         mint_a: at(accounts, spec.accounts.mint_a),
-        mint_b: at(accounts, spec.accounts.mint_b).or_else(|| spec.mint_b_default.map(String::from)),
+        mint_b: at(accounts, spec.accounts.mint_b)
+            .or_else(|| spec.mint_b_default.map(String::from)),
         lp_mint: at(accounts, spec.accounts.lp_mint),
         vault_a: at(accounts, spec.accounts.vault_a),
         vault_b: at(accounts, spec.accounts.vault_b),
         amounts,
-        migration: spec
-            .migration
-            .map(|(from, to)| Migration { from: from.to_string(), to: to.to_string() }),
+        migration: spec.migration.map(|(from, to)| Migration {
+            from: from.to_string(),
+            to: to.to_string(),
+        }),
     })
 }
 
 /// Early graduation signal: Pump.fun BondingCurve account with `complete == true`.
-pub fn decode_bonding_curve(program: &str, data: &[u8], ctx: &DecodeContext) -> Option<StreamEvent> {
+pub fn decode_bonding_curve(
+    program: &str,
+    data: &[u8],
+    ctx: &DecodeContext,
+) -> Option<StreamEvent> {
     if program != PUMPFUN_PROGRAM
         || data.len() < BONDING_CURVE_COMPLETE_OFFSET + 1
         || hex::encode(&data[0..8]) != BONDING_CURVE_DISC
